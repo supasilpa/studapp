@@ -30,26 +30,30 @@ public class RegisterActivity extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                s1=e1.getText().toString();
-                s2=e2.getText().toString();
-                s3=e3.getText().toString();
-                s4=e4.getText().toString();
-                s5=e5.getText().toString();
-                s6=e6.getText().toString();
-                s7=e7.getText().toString();
-                s8=e8.getText().toString();
-                Toast.makeText(getApplicationContext(),s1,Toast.LENGTH_LONG).show();
-                Toast.makeText(getApplicationContext(),s2,Toast.LENGTH_LONG).show();
-                Toast.makeText(getApplicationContext(),s3,Toast.LENGTH_LONG).show();
-                Toast.makeText(getApplicationContext(),s4,Toast.LENGTH_LONG).show();
-                Toast.makeText(getApplicationContext(),s5,Toast.LENGTH_LONG).show();
-                Toast.makeText(getApplicationContext(),s6,Toast.LENGTH_LONG).show();
-                Toast.makeText(getApplicationContext(),s7,Toast.LENGTH_LONG).show();
-                Toast.makeText(getApplicationContext(),s8,Toast.LENGTH_LONG).show();
-                Toast.makeText(getApplicationContext(),"Successfully Registered",Toast.LENGTH_LONG).show();
+                s1 = e1.getText().toString();
+                s2 = e2.getText().toString();
+                s3 = e3.getText().toString();
+                s4 = e4.getText().toString();
+                s5 = e5.getText().toString();
+                s6 = e6.getText().toString();
+                s7 = e7.getText().toString();
+                s8 = e8.getText().toString();
+                if (s7.equals(s8)) {
+                    Toast.makeText(getApplicationContext(), s1, Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), s2, Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), s3, Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), s4, Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), s5, Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), s6, Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), s7, Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), s8, Toast.LENGTH_LONG).show();
 
+                } else {
+                    Toast.makeText(getApplicationContext(), "Registration Failed", Toast.LENGTH_LONG).show();
+                }
             }
-        });
+
+            });
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
