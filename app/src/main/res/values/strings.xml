@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Student app</string>
+    <string name="degree">Highest degree</string>
+    <string-array name="degree_list">
+        <item>BCA</item>
+        <item>MCA</item>
+        <item>MSC computer science</item>
+        <item>Bsc computer science</item>
+
+    </string-array>
 </resources>

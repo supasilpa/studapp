@@ -1,3 +1,6 @@
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 <LinearLayout
     android:layout_height="match_parent"
     android:layout_width="match_parent"
@@ -31,6 +34,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/rollno"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/degree"
+        android:textSize="15dp"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      android:entries="@array/degree_list"
+
+        />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -89,3 +103,4 @@
         android:textSize="15dp"
         android:id="@+id/alr1"/>
 </LinearLayout>
+</ScrollView>

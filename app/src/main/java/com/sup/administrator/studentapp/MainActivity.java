@@ -1,6 +1,7 @@
 package com.sup.administrator.studentapp;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -14,10 +15,20 @@ public class MainActivity extends AppCompatActivity {
     String s1,s2;
     String stid="mzc";
     String pass="college";
+    String checkusername;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        SharedPreferences a=getSharedPreferences("login",MODE_PRIVATE);
+        checkusername=a.getString("username",null);
+        if(checkusername!=null)
+        {
+            Intent i =new Intent(getApplicationContext(),Welcome.class);
+            startActivity(i);
+        }
+
 
         e1=(EditText)findViewById(R.id.id);
         e2=(EditText)findViewById(R.id.pass);
@@ -37,7 +48,14 @@ public class MainActivity extends AppCompatActivity {
                 s2=e2.getText().toString();
                 if(s1.equals(stid) && (s2.equals(pass)))
                 {
+                    SharedPreferences.Editor ed=getSharedPreferences("login",MODE_PRIVATE).edit();
+                    ed.putString("username",s1);
+                    ed.putString("password",s2);
+                    ed.apply();
+//                    ed.commit();
                     Intent a=new Intent(getApplicationContext(),Welcome.class);
+                    a.putExtra("username",s1);
+                    a.putExtra("password",s2);
                     startActivity(a);
                 }
                 else
