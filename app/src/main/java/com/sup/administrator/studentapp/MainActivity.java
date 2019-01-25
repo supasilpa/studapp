@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else
                 {
-                    Toast.makeText(getApplicationContext(),"Incoorect Password or id",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(),"Incorrect Password or id",Toast.LENGTH_LONG).show();
                 }
 
             }

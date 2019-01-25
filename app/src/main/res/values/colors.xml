@@ -4,4 +4,15 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="legal">#aabbdd</color>
+    <color name="startcolor"> #007991</color>
+    <color name="endcolor">#78ffd6</color>
+    <color name="scolor">#30E8BF</color>
+    <color name="ecolor">#FF8235</color>
+<color name="cicolor">#C779D0</color>
+    <color name="rcolor">#EECDA3</color>
+<color name="recolor">#EF629F</color>
+    <color name="wadd">#4BC0C8</color>
+    <color name="wsub">#FFA17F</color>
+<color name="wmult">#FDFC47</color>
+    <color name="wdiv">#24FE41</color>
 </resources>

@@ -1,4 +1,7 @@
-<LinearLayout android:layout_height="match_parent"
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:background="#bb007a"
     android:orientation="vertical"
@@ -7,11 +10,51 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="WELCOME STUDENT"
-        android:textSize="50dp"/>
+        android:textSize="20dp"/>
+    <ImageView
+        android:layout_margin="15dp"
+        android:src="@drawable/add"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="@drawable/weladd"
+        android:id="@+id/add"/>
+    <ImageView
+        android:layout_margin="15dp"
+        android:src="@drawable/sub"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="@drawable/welsub"
+        android:id="@+id/sub"/>
+    <ImageView
+        android:layout_margin="15dp"
+        android:src="@drawable/mult"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="@drawable/welmult"
+        android:id="@+id/mult"/>
+    <ImageView
+        android:layout_margin="15dp"
+        android:src="@drawable/p"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="@drawable/weldiv"
+        android:id="@+id/div"/>
     <Button
+        android:layout_margin="15dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/logout"
-        android:text="logout"/>
+        android:text="logout"
+        android:background="@drawable/buttonstyles"/>
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="View all"
+           android:id="@+id/view"/>
 
 </LinearLayout>
+</ScrollView>
