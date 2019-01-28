@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
    EditText e1,e2;
-    Button b,b1;
+    Button b,b1,b4;
     String s1,s2;
     String stid="mzc";
     String pass="college";
@@ -28,12 +28,20 @@ public class MainActivity extends AppCompatActivity {
             Intent i =new Intent(getApplicationContext(),Welcome.class);
             startActivity(i);
         }
+        b4=(Button)findViewById(R.id.viewusers);
 
 
         e1=(EditText)findViewById(R.id.id);
         e2=(EditText)findViewById(R.id.pass);
         b=(Button)findViewById(R.id.login);
         b1=(Button)findViewById(R.id.reg);
+        b4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent k=new Intent(getApplicationContext(),userlist.class);
+                startActivity(k);
+            }
+        });
        b1.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View view) {
